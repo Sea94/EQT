@@ -35,25 +35,37 @@ Question intents describe the emotional effect the question should have on the d
 11. **Motivate** Encourage the speaker to move onward.
 12. **Moralize speaker** Judge the speaker.
 
-This repository contains the code used to train and evaluate the classifier, the datasets used and the annotated results.  
+We used an iterative qualitative coding method (Stivers and Enfield, 2010; Huang et al., 2017) to manually annotate more than 310 listener questions from the EmpatheticDialogues dataset (Rashkin et al., 2019) using the above taxonomy. A larger sub-sample of the EmpatheticDialogues dataset was annotated recruiting crowdworkers from Amazon Mechanical Turk (MTurk) resulting in 6,433 questions assigned with a question act label and 5,826 questions assigned with a question intent label. 
 
-## Initial Weights
+We extended the number of examples for each question act and intent by searching through the rest of the dataset using k-Nearest-Neighbors (k-NN) method. More specifically, we employed the Sentence-BERT (SBERT) framework (Reimers and Gurevych, 2019) to obtain embeddings for all questions with their contexts. Then we used the cosine similarity measure to find k labeled NNs for each question in the unlabeled set and assign the same labels to them. This produced additional 1,911 labels for question acts and 1,886 labels for question intents.
+
+Using the human-annotated and augmented labels, we trained two classifiers, which we collectively call QBERT.
+
+This repository contains the code used to train and evaluate the QBERT classifier, the datasets used for training and evaluation and the annotated results. 
+
+### QBERT
+
+QBERT models for predicting question acts and intents have identical architecture and vary only in the number of output categories in the final layer. Each model consists of a BERT-based representation network, an atten459 tion layer, one hidden layer, and a softmax layer. For the representation network, we used the archi461 tecture with 12 layers, 768 dimensions, 12 heads,and 110M parameters. We initialized it with the weights of RoBERTa language model pre-trained by Liu et al. (2019) and for training used the same hyper-parameters as the authors.
+
+The listener question and preceding dialog turns are fed into the classfier in the reverse order to obtain predictions. 
+
+#### Initial Weights
 Add the following weights files to the `weights` folder:
 
 https://drive.google.com/drive/folders/1zsPHHqs5rsIydBVER-T2wnyAqM0S6DS-?usp=sharing
 
 
-## Training
+#### Training
 
 Run `python train_qbert.py [type/intent]`
 
 
-## Prediction
+#### Prediction
 
 Run `python predict_qbert.py [type/intent]`
 
 
-## Requirements
+#### Dependencies
 
 numpy==1.19.2  
 tensorflow_gpu==2.5.0  
@@ -63,7 +75,11 @@ pandas==1.2.3
 scikit_learn==0.24.2  
 tensorflow==2.6.0  
 
+### Datasets
 
-## TODO
+The original EmpatheticDialogues dataset can be downloaded from: [github.com/facebookresearch/EmpatheticDialogues](https://github.com/facebookresearch/EmpatheticDialogues).
 
-Change `type` to `act`
+This repository contains the following datasets:
+
+
+
