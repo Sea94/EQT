@@ -1,4 +1,4 @@
-# QuestionInIntentsAndActs
+# EQT: Empathetic Question Taxonomy
 
 ### Introduction
 
@@ -81,5 +81,11 @@ The original EmpatheticDialogues dataset can be downloaded from: [github.com/fac
 
 This repository contains the following datasets:
 
+1. ***data/quest_df_all_labelled_intents.pickle***: To do
+2. ***data/quest_df_all_with_sbert.pickle***: To do
+3. ***data/test_set.pickle***: To do
+4. **annotations/ed_annotated.csv** Contains question act and question intent labels assigned to each listener's question in the EmpatheticDialogues (ED) dataset as predicted by QBERT.
 
+### Bibliography
 
+Hannah Rashkin, Eric Michael Smith, Margaret Li and Y-Lan Boureau. 2019.  Towards Empathetic Open-domain Conversation  Models:  A  New  Benchmark  and  Dataset.   In *Proceedings  of  the  57th  Annual  Meeting  of  the Association for Computational Linguistics*, pages 5370–5381, Florence, Italy.
