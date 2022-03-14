@@ -4,7 +4,7 @@
 
 Effective question-asking is a crucial component of a successful conversational chatbot. It could help the bots manifest empathy and render the interaction more engaging by demonstrating attention to the speaker’s emotions. However, current dialog generation approaches do not model this subtle emotion regulation technique due to the lack of a taxonomy of questions and their purpose in social chitchat. To address this gap, we developed an empathetic question taxonomy (EQT), with special attention paid to questions’ ability to capture communicative acts (Question acts) and their emotion regulation intents (Question intents).
 
-## Question Acts
+#### Question Acts
 
 Question acts capture semantic-driven communicative actions of questions. 
 
@@ -18,7 +18,7 @@ Question acts capture semantic-driven communicative actions of questions.
 8. **Negative rhetoric** Ask a question to express a critical opinion or validate a speaker’s negative point without expecting an answer.
 9. **Positive rhetoric** Ask a question to make an encouraging statement or demonstrate agreement with the speaker about a positive point without expecting an answer.
 
-## Question Intents
+#### Question Intents
 
 Question intents describe the emotional effect the question should have on the dialog partner.
 
