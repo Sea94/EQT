@@ -86,6 +86,12 @@ This repository contains the following datasets:
 3. ***data/test_set.pickle***: Testing data used for testing the performance of QBERT
 4. **annotations/ed_annotated.csv** Contains question act and question intent labels assigned to each listener's question in the EmpatheticDialogues (ED) dataset as predicted by QBERT.
 
+### References
+
+Please cite the following paper if you found the resources in this repository useful.
+
+E. Svikhnushina, I. Voinea, A. Welivita, P. Pu **A Taxonomy of Empathetic Questions in Social Dialogs**, In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (ACL 2022).  
+
 ### Bibliography
 
 Hannah Rashkin, Eric Michael Smith, Margaret Li and Y-Lan Boureau. 2019.  Towards Empathetic Open-domain Conversation  Models:  A  New  Benchmark  and  Dataset.   In *Proceedings  of  the  57th  Annual  Meeting  of  the Association for Computational Linguistics*, pages 5370–5381, Florence, Italy.
