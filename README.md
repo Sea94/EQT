@@ -82,8 +82,8 @@ The original EmpatheticDialogues dataset can be downloaded from: [github.com/fac
 This repository contains the following datasets:
 
 1. ***data/quest_df_all_labelled_intents.pickle***: To do
-2. ***data/quest_df_all_with_sbert.pickle***: To do
-3. ***data/test_set.pickle***: To do
+2. ***data/quest_df_all_with_sbert.pickle***: Training data required for training QBERT
+3. ***data/test_set.pickle***: Testing data used for testing the performance of QBERT
 4. **annotations/ed_annotated.csv** Contains question act and question intent labels assigned to each listener's question in the EmpatheticDialogues (ED) dataset as predicted by QBERT.
 
 ### Bibliography
