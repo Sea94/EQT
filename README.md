@@ -64,6 +64,11 @@ Run `python train_qbert.py [type/intent]`
 
 Run `python predict_qbert.py [type/intent]`
 
+#### Fine-tuned weights
+Our fine-tuned weights can be downloaded from here:
+
+https://drive.google.com/drive/folders/1oSqvzhXhyCKBnX9M0gwra7jnFp9N2FaN?usp=share_link
+
 
 #### Dependencies
 
@@ -90,10 +95,28 @@ This repository contains the following datasets:
 
 Please cite the following paper if you found the resources in this repository useful.
 
-- Ekaterina Svikhnushina, Iuliana Voinea, Anuradha Welivita, and Pearl Pu **A Taxonomy of Empathetic Questions in Social Dialogs**, In *Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (ACL 2022)*.  
+- Ekaterina Svikhnushina, Iuliana Voinea, Anuradha Welivita, and Pearl Pu **A Taxonomy of Empathetic Questions in Social Dialogs**, In *Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (ACL 2022)*.
+
+```
+@inproceedings{svikhnushina-etal-2022-taxonomy,
+    title = "A Taxonomy of Empathetic Questions in Social Dialogs",
+    author = "Svikhnushina, Ekaterina  and Voinea, Iuliana  and Welivita, Anuradha  and Pu, Pearl",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.211",
+    doi = "10.18653/v1/2022.acl-long.211",
+    pages = "2952--2973",
+}
+```
 
 ### Bibliography
 
 - Hannah Rashkin, Eric Michael Smith, Margaret Li and Y-Lan Boureau. 2019.  Towards Empathetic Open-domain Conversation  Models:  A  New  Benchmark  and  Dataset.   In *Proceedings  of  the  57th  Annual  Meeting  of  the Association for Computational Linguistics*, pages 5370–5381, Florence, Italy.
 - Nils Reimers and Iryna Gurevych. 2019. Sentence786 BERT: Sentence embeddings using Siamese BERT networks. In *Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)*, pages 3982–3992.
 - Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov. 2019. Roberta: A robustly optimized bert pretraining approach. *arXiv preprint arXiv:1907.11692*.
+
+### License
+See the [LICENSE](LICENSE) file in the root repo folder for more details.
