@@ -1,5 +1,8 @@
 # EQT: Empathetic Question Taxonomy
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8279451.svg)](https://doi.org/10.5281/zenodo.8279451)
+
+
 ### Introduction
 
 Effective question-asking is a crucial component of a successful conversational chatbot. It could help the bots manifest empathy and render the interaction more engaging by demonstrating attention to the speaker’s emotions. However, current dialog generation approaches do not model this subtle emotion regulation technique due to the lack of a taxonomy of questions and their purpose in social chitchat. To address this gap, we developed an empathetic question taxonomy (EQT), with special attention paid to questions’ ability to capture communicative acts (Question acts) and their emotion regulation intents (Question intents).
