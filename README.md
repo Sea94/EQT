@@ -70,7 +70,7 @@ Run `python predict_qbert.py [type/intent]`
 #### Fine-tuned weights
 Our fine-tuned weights can be downloaded from here:
 
-https://drive.google.com/drive/folders/1oSqvzhXhyCKBnX9M0gwra7jnFp9N2FaN?usp=share_link
+https://drive.google.com/drive/folders/1Z8edHY3HYFJOgYr4hJx0I3gvL37yDNmk?usp=sharing
 
 
 #### Dependencies
